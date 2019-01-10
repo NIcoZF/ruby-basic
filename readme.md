@@ -6,4 +6,4 @@ Password.rb demande a l'utilisateur de choisir un mot de passe puis lui demande 
 
 Stairway.rb est un jeu ou un personnage doit gravir des étages et ou le but est d'arriver au sommet.
 
-Contributeur : Amaro Cyrille Howok, Armand Duval Urbain4, Jonathan Gaultier Joongo.
+Contributeur : Amaro Cyrille Howok, Armand Duval Urbain4, Jonathan Gaultier Joongau.

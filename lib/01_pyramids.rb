@@ -1,5 +1,5 @@
 def number_user
-    puts "Salut, donne moi un nombre entre 1 et 25."
+    puts "Salut, donne moi un nombre Impair."
 print ">"
 number = gets.chomp
 return number
@@ -12,25 +12,34 @@ def half_pyramid(number)
     hashtaga = "#{"#" * (i + 1)}"
     hashtagaa = "#{"#" * i}" 
     pyramid << spacea + hashtaga + hashtagaa
+
     end
+
     number.to_i.downto(0) do |i|
     hashtag = "#{"#" * i}"
     space = "#{" " * (number.to_i - i)}"
     hashtagx = "#{"#" * (i + 1)}" 
     pyramid << space + hashtag + hashtagx
+
     end
 
     return pyramid
+
 end
 
 def condition(number)
     pyramid = half_pyramid(number)
-    if number.to_i >= 26
-        puts "Entre 1 et 25!!"
+    
+    while number.to_i % 2 == 0
+        puts "Un nombre IMPAIR!!!!!!!"
+        print ">"
+        number = gets.chomp
+    
     end
 
-    if number.to_i <= 25
+    if number.to_i % 2 == 1
         puts pyramid
+        
     end
 
 end

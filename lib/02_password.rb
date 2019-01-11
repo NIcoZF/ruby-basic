@@ -13,10 +13,8 @@ end
 def welcome_screen
     mdp = signup
     log = login
-    while mdp != log
-         puts "Tape ton mot de passe"
-        print ">"
-        log = gets.chomp
+    if mdp != log
+         puts "Le GIGN a été contacté pour venir te cueillir !!!"
     end
 
     if mdp == log
